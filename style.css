@@ -1,0 +1,141 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(251,202,63);
+    background: radial-gradient(circle, rgba(251,202,63,1) 62%, rgba(234,239,241,1) 100%);
+    font-family: Open sans, Helvetica, sans-serif;
+    padding: clamp(20px, 5vw, 50px) 10px;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #222222;
+    color: #F1F1F1;
+    border-radius: 5px;
+    border: 1px solid #ffffffc3
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+}
+
+.input-group {
+margin-top: 30px;
+position: relative;
+}
+
+
+label {
+    font-size: 20px;
+    display: block;
+    position: relative;
+}
+
+input {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    color: #f1f1f1;
+    padding: 10px 0;
+    outline: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+input:focus {
+    box-shadow: 0 1px 0px rgba(255,255,255,1);
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+.icon-input-container {
+position: relative;
+}
+
+.icone-verif {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: none;
+}
+
+.error-msg {
+margin-top: 7px;
+color: #f75252;
+font-weight: 400;
+display: none;
+}
+
+.pwsd-info {
+margin-top: 8px;
+color: #a9a9a9;
+font-weight: 400;
+display: block;
+}
+
+.lines {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.l1, .l2, .l3 {
+height: 5px;
+margin: 15px 5px 20px;
+width: 30%;
+position: relative
+}
+
+.l1 {
+background-color: #cf5914;
+}
+
+.l2 {
+background-color: #fdeb50;
+}
+
+.l3 {
+background-color: #14e414;
+}
+
+.lines span {
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+}
+
+form button {
+    font-size: 20px;
+    min-width: 150px;
+    display: block;
+    margin: 40px auto 10px;
+    padding: 12px 15px;
+    outline: 0;
+    background-color: #fffcdc;
+    border: 1px solid #f1f1f13d;
+    border-radius: 3px;
+    font-family: Raleway;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e3dfa2;
+}
